@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="myPackage" extends="struts-default" namespace="/">
+	<action name="Buy" class="Action.DoBuyAction">
+		<result name="SUCCESS">/buy.jsp</result>
+		<result name="ERROR">user_update.jsp</result>
+	</action>
+	
+	<action name="CityChange">
+		<result>/databaseCityChange</result>
+	</action>
+	
+	<action name="getdrink" class="database.GetDrink">
+		<result name="ERROR" >admin_error.jsp</result>
+		<result>/admin_machine.jsp</result>
+	</action>
+	
+	<action name="machine" class="Admin.machine">
+		<result name="ERROR" >admin_error.jsp</result>
+		<result>/Success.jsp</result>
+	</action>
+	
+	<action name="submitSelect" class="Action.SelectChange">
+		<result name="change">SelectMno.jsp</result>
+		<result name="ERROR">/error.jsp</result>
+	</action>
+	
+	<action name="admin_stock" class="Admin.stock">
+		<result name="SUCCESS">/stock.jsp</result>
+		<result name="ERROR">/admin_error.jsp</result>
+	</action>
+	
+	<action name="admin_income" class="Admin.income">
+		<result name="SUCCESS">/income.jsp</result>
+		<result name="ERROR">/admin_error.jsp</result>
+	</action>
+	
+	<action name="admin_register" class="Admin.register">
+		<result name="SUCCESS">/Success.jsp</result>
+		<result name="ERROR">/admin_error.jsp</result>
+	</action>
+	
+	<action name="admin_popular" class="Admin.Popular">
+		<result name="SUCCESS" >Popular.jsp</result>
+		<result name="NULL">/admin_error.jsp</result>
+	</action>
+	
+	<action name="Select" class="Action.SelectMno">
+		<result name="change">index.jsp</result>
+		<result name="search_stock" type="chain">admin_stock </result>
+		<result name="income" type="chain">admin_income </result>
+		<result name="ERROR">/error.jsp</result>
+		<result name="null">/admin_error.jsp</result>
+	</action>
+	
+	<action name="pay_success" >
+		<result>/Pay_success</result>
+	</action>
+	
+	<action name="paying" class="Pay.Paying">
+		<result name="SUCCESS">/Pay_success</result>
+		<result name="ERROR">/error.jsp</result>
+	</action>
+	
+	<action name="login_check" class="Action.Login">
+		<result name="input">/error.jsp</result>
+		<result>/admin.jsp</result>
+	</action>
+	
+	<action name="stockchange" class="Admin.stock_change" >
+		<result name="SUCCESS" >/Success.jsp</result>
+	</action>
+	
+	<action name="fileUpload" class="Admin.FileUploadAction">
+		<interceptor-ref name="fileUploadStack"/>
+		<result>/Success.jsp</result>
+	</action>
+	</package>
+	
+
+</struts>    

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sms.dao.DetailsDao">
+	<select id="findAll" parameterType="java.lang.String"  resultType="com.sms.entity.DetailsEntity">
+		select * from details where phone_number= ${_parameter} order by room_id asc
+	</select> 
+	<insert id="add" parameterType="com.sms.entity.DetailsEntity" useGeneratedKeys="true" keyProperty="id">
+	    insert into details (phone_number, room_name, room_id, num) values (#{phone_number}, #{room_name}, #{room_id}, #{num});
+	</insert>
+</mapper>

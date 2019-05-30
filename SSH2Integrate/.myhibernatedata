@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Thu Feb 08 12:41:46 CST 2018
+genBasicCompId=false
+sessionFactoryName=
+profile=
+daoSFId=
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=assigned
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=/SSH2Integrate/hibernate.reveng.xml
+configFile=/SSH2Integrate/src/applicationContext.xml
+createConfigFile=true

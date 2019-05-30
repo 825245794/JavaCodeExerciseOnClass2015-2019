@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sms.dao.UserDao">
+	<select id="UserLogin" parameterType="com.sms.entity.UserEntity" resultType="java.lang.Integer">
+		select count(*) from users where phone_number= #{username} and psw=#{password}
+	</select> 
+</mapper>

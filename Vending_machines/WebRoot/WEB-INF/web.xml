@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Vending_machines</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>struts-cleanup</filter-name>
+    <filter-class>
+org.apache.struts2.dispatcher.ActionContextCleanUp
+</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>struts-cleanup</filter-name>
+    <url-pattern> /* </url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>struts2</filter-name>
+    <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>struts2</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>databaseinit</servlet-name>
+    <servlet-class>database.databaseinit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>databaseinit</servlet-name>
+    <url-pattern>/databaseinit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DatabaseCityChange</servlet-name>
+    <servlet-class>database.DatabaseCityChange</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Pay_success</servlet-name>
+    <servlet-class>Pay.Pay_success</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DatabaseCityChange</servlet-name>
+    <url-pattern>/databaseCityChange</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Pay_success</servlet-name>
+    <url-pattern>/Pay_success</url-pattern>
+  </servlet-mapping>
+</web-app>

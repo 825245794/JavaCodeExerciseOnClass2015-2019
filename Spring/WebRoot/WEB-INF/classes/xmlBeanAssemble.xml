@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="user1" class="com.shw.Users" scope="prototype">
+      	<property name="loginName" value="zhangsan"></property>
+    </bean>
+    
+    <bean id="user2" class="com.shw.Users">
+    	<property name="loginName" value="zhangsan"></property>
+    </bean>
+    
+    <bean id="user3" class="com.shw.Users">
+    	<constructor-arg index="0" value="lisi"></constructor-arg>
+    	<constructor-arg index="1" value="123456"></constructor-arg>
+    </bean>
+    
+    <bean id="xba" class="com.shw.XmlBeanAssemble" init-method="init" destroy-method="destroy">
+    	<property name="MyList1">
+    		<list>
+    			<ref bean="user1"></ref>
+    			<ref bean="user1"></ref>
+    		</list>
+    	</property>
+    	
+    	<property name="MyList2">
+    		<list>
+    			<ref bean="user2"></ref>
+    			<ref bean="user2"></ref>
+    		</list>
+    	</property>
+    	
+    	<property name="mySet">
+    		<set>
+    			<ref bean="user3"></ref>
+    			<value>Struts 2</value>
+    			<value>Spring 3</value>
+    		</set>
+    	</property>
+    	
+    	<property name="myMap">
+    	<map>
+    		<entry key="Struts 2">
+    			<value>支持MVC模式</value>
+    		</entry>
+    		<entry key="Spring 3">
+    			<value>充当组件间的粘合剂</value>
+    		</entry>
+    	</map>
+    	</property>
+    </bean>
+
+</beans>
+

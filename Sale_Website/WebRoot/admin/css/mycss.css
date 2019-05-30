@@ -1,0 +1,57 @@
+#conn{
+	width: 100%;
+}
+
+#d1{
+	  width: 900px;
+	  height: 700px;
+	  background-color: #FFFFFF; 
+	  margin: 0 auto;
+      border:1px solid  #9966FF;
+	  }
+
+#d1 h1 {
+	font-family: "华文彩云", "华文仿宋", "华文行楷";
+	font-size: 24px;
+	font-weight: 800;
+	color: #6500A8;
+	letter-spacing: 0.2em;
+}
+.title {
+	font-family: "华文行楷";
+	font-size: 18px;
+	color: #5A0097;
+	text-align: center;
+}
+.inputtext {
+	font-family: "华文行楷";
+	font-size: 16px;
+	color: #000093;
+}
+.input1 {
+	height: 25px;
+	width: 150px;
+}
+
+#d1 select {
+	font-family: "宋体";
+	font-size: 14px;
+	color: #4E2E6B;
+	height: 25px;
+	width: 150px;
+}
+.button {
+	font-family: "宋体";
+	font-size: 14px;
+	color: #340057;
+	background-color: #9999CC;
+	height: 20px;
+	width: 80px;
+	border: 1px solid #191919;
+}
+#file2{
+height: 25px;
+	width: 225px;
+	background-color:#FFFFFF;
+
+}

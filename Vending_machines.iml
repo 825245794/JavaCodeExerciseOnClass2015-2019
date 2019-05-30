@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/Vending_machine/WebRoot/WEB-INF/lib/mysql-connector-java-6.0.5-bin.jar" />
+    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
+    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
+    <conelement value="com.genuitec.runtime.library/com.genuitec.struts_2.1" />
+    <conelement value="com.genuitec.runtime.library/com.genuitec.jstl_1.2" />
+    <conelement value="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/Vending_machines/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/Vending_machines/WebRoot/WEB-INF/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/Vending_machines">
+      <sourceFolder url="file://$MODULE_DIR$/Vending_machines/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library name="mysql-connector-java-6.0.5-bin.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/Vending_machine/WebRoot/WEB-INF/lib/mysql-connector-java-6.0.5-bin.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="jdk" jdkName="Java SE 8 [1.8.0_73]" jdkType="JavaSDK" />
+    <orderEntry type="library" exported="" name="com.genuitec.runtime.library/com.genuitec.struts_2.1" level="application" />
+    <orderEntry type="library" exported="" name="com.genuitec.runtime.library/com.genuitec.jstl_1.2" level="application" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0" level="application" />
+  </component>
+</module>

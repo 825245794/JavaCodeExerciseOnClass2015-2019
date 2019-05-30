@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+    <package name="admin" namespace="/admin" extends="struts-default">
+      
+      <global-results>
+         <result name="error">/admin/error.jsp</result>
+      
+      </global-results>
+      
+      <!-- 实现管理员登录 -->
+	<action name="login" class="com.mall.action.AdminAction" method="login">
+			<result>/admin/adminmain.jsp</result>
+			<result name="error">/admin/login.jsp</result>
+		</action>
+       <!-- 实现管理员退出登录 -->
+	<action name="exit" class="com.mall.action.AdminAction" method="exit">
+			<result>/admin/exit.jsp</result>
+	</action> 
+      
+      <!--    商品类型管理 -->
+       <action name="getType" class="com.mall.action.Admin_TypeAction" method="getType">
+          <result>/admin/editType.jsp</result>
+       </action>
+     <action name="addType" class="com.mall.action.Admin_TypeAction" method="addType">
+          <result type="chain">getType</result>
+       </action>
+       
+     <!-- 商品操作 --> 
+       <!-- 获取商品添加页面 --> 
+      <action name="getAddGoods" class="com.mall.action.Admin_GoodsAction" method="getAddGoods">
+          <result>/admin/addGoods.jsp</result>
+       </action>
+       <!-- 实现商品添加 --> 
+      <action name="addGoods" class="com.mall.action.Admin_GoodsAction" method="addGoods">
+          <result type="chain">getAddGoods</result>
+       </action>
+       
+       <!-- 实现获取商品信息 --> 
+      <action name="getAllGoods" class="com.mall.action.Admin_GoodsAction" method="getAllGoods">
+          <result>/admin/editGoods.jsp</result>
+       </action>
+        <!-- 实现获取要修改的商品信息 --> 
+      <action name="getUpdateGoods" class="com.mall.action.Admin_GoodsAction" method="getUpdateGoods">
+          <result>/admin/updateGoods.jsp</result>
+       </action>
+       
+         <!-- 实现更新商品信息 --> 
+      <action name="updateGoods" class="com.mall.action.Admin_GoodsAction" method="updateGoods">
+          <result type="chain">
+             <param name="actionName">getAllGoods</param>
+             <param name="currpage">${currpage}</param>
+         </result>
+       </action>
+       
+       
+         <!-- 实现查询制定的商品信息 --> 
+      <action name="selectGoods" class="com.mall.action.Admin_GoodsAction" method="selectGoods">
+          <result>/admin/editGoods.jsp</result>
+       </action>
+       
+    <!-- *********************************************************************************************** -->   
+       <!-- 得到订单页面 -->
+    <action name="getShowOrder" class="com.mall.action.OrderAction" method="getShowOrder">
+        <result>/admin/order.jsp</result>
+      </action>
+   
+   <!-- 得到订单详情页面 -->
+   <action name="getOrderDetail" class="com.mall.action.OrderAction" method="getOrderDetail">
+        <result>/admin/orderDetail.jsp</result>
+      </action>
+      
+   <!-- 修改订单状态 -->
+   <action name="goodsSend" class="com.mall.action.OrderAction" method="goodsSend">
+        <result type="chain">getShowOrder</result>
+      </action>
+       
+    </package>
+
+</struts>    

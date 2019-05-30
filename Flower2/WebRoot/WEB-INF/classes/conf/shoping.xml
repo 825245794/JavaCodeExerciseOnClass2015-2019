@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+ <package name="shoping" namespace="/shoping" extends="struts-default">
+     
+     
+      <interceptors>
+			<interceptor name="auth" class="interceptor.ShopingIntercepter"></interceptor>
+			<interceptor-stack name="authority">
+			      <interceptor-ref name="defaultStack"></interceptor-ref>
+		          <interceptor-ref name="auth"></interceptor-ref>
+			</interceptor-stack>
+	 </interceptors>  
+       
+     <global-results>
+         <result name="error">/admin/error.jsp</result>
+         <result name="login">/user/login.jsp</result>
+      </global-results>
+   <!-- 拦截器,要求用户先登录 -->   
+   
+      
+       <!-- 获得商品详情页面 -->
+      <action name="getGoodsDetail" class="action.ShopingAction" method="getGoodsDetail">
+        <result>/user/goodsDetail.jsp</result>
+      </action>
+      
+      <!-- 立即购买************************************************************************************** -->
+      <!-- 立即购买时，得到订单确认页面 -->
+       <action name="getOrderConfirm" class="action.ShopingAction" method="getOrderConfirm">
+          <result>/user/orderConfirm.jsp</result>
+          <interceptor-ref name="authority"></interceptor-ref>
+      </action>
+      
+      <!-- 修改地址后，再一次得到订单确认页面 -->
+       <action name="getOrderConfirmAgain" class="action.ShopingAction" method="getOrderConfirmAgain">
+        <result>/user/orderConfirm.jsp</result>
+      </action>
+     
+     
+     <!-- 修改商品数量后，再一次得到订单确认页面 -->
+    <!--    <action name="updateShopingNum" class="action.ShopingAction" method="updateShopingNum">
+        <result type="chain">getOrderConfirmAgain</result>
+      </action>-->
+     
+      <!-- 提交订单 -->
+      <action name="orderSubmit" class="action.ShopingAction" method="orderSubmit">
+         <result>/user/orderdone.jsp</result>
+         <result name="error" type="chain">getOrderConfirmAgain</result>
+      </action>
+   <!-- ********************通过购物车购买******************************************************************** -->   
+   
+     <!-- 把商品放进购物车 -->
+      <action name="addCart" class="action.ShopingAction" method="addCart">
+          <result>/user/goodsDetail.jsp</result>
+           <interceptor-ref name="authority"></interceptor-ref>
+      </action>
+    <!-- 显示购物车 -->
+     <action name="showCart" class="action.ShopingAction" method="showCart">
+          <result>/user/cart.jsp</result>
+           <interceptor-ref name="authority"></interceptor-ref>
+      </action>
+      
+      
+        <!-- 修改购物车中的商品数量 -->
+     <action name="updateShopingNum" class="action.ShopingAction" method="updateShopingNum">
+          <result type="chain">showCart</result>
+          
+      </action>  
+      
+    <!-- 从购物车删除指定商品 -->
+     <action name="deleteCart" class="action.ShopingAction" method="deleteCart">
+          <result type="chain">showCart</result>
+      </action>
+    <!-- 清空购物车 -->
+     <action name="deleteAllCart" class="action.ShopingAction" method="deleteAllCart">
+          <result type="chain">showCart</result>
+      </action>
+ 
+   <!--从购物车进入确认订单页面  -->
+    <action name="getOrderConfirmCart" class="action.ShopingAction" method="getOrderConfirmCart">
+        <result>/user/orderConfirmCart.jsp</result>
+        
+      </action>
+   
+  
+   
+   <!-- 得到订单页面 -->
+    <action name="getShowOrder" class="action.ShopingAction" method="getShowOrder">
+        <result>/user/order.jsp</result>
+         <interceptor-ref name="authority"></interceptor-ref>
+      </action>
+   
+   <!-- 得到订单详情页面 -->
+   <action name="getOrderDetail" class="action.ShopingAction" method="getOrderDetail">
+        <result>/user/orderDetail.jsp</result>
+      </action>
+   
+   
+   <!-- 修改订单状态 -->
+   <action name="goodsGet" class="action.ShopingAction" method="goodsGet">
+        <result type="chain">getShowOrder</result>
+      </action>
+      
+   <!-- 修改订单状态 -->
+   <action name="deleteOrder" class="action.ShopingAction" method="deleteOrder">
+        <result type="chain">getShowOrder</result>
+      </action>
+   
+   <!-- ****************管理地址******************************************************************88 -->
+  <!-- ***** 直接购买时****************************************************************8 --> 
+    <!-- 获得添加地址页面 -->
+       <action name="addAddress" class="action.ShopingAction" method="addAddress">
+        <result type="chain">getOrderConfirmAgain</result>
+      </action>
+       <!-- 获得修改地址页面 -->
+       <action name="getUpdateAddress" class="action.ShopingAction" method="getUpdateAddress">
+         <result>/user/updateAddress.jsp</result>
+      </action>
+      <!-- 实现修改地址页面 -->
+       <action name="updateAddress" class="action.ShopingAction" method="updateAddress">
+        <result type="chain">getOrderConfirmAgain</result>
+      </action>
+      <!-- 实现删除地址页面 -->
+       <action name="deleteAddress" class="action.ShopingAction" method="deleteAddress">
+        <result type="chain">getOrderConfirmAgain</result>
+      </action>
+   
+    <!-- ***** 通过购物车购买直接购买时****************************************************************8 --> 
+     <!--通过购物车修改地址 获得添加地址页面 -->
+       <action name="addAddressCart" class="action.ShopingAction" method="addAddress">
+        <result type="chain">getOrderConfirmCart</result>
+      </action>
+       <action name="getUpdateAddressCart" class="action.ShopingAction" method="getUpdateAddress">
+         <result>/user/updateAddressCart.jsp</result>
+      </action>
+      <!-- 实现修改地址页面 -->
+       <action name="updateAddressCart" class="action.ShopingAction" method="updateAddress">
+        <result type="chain">getOrderConfirmCart</result>
+      </action>
+      <!-- 实现删除地址页面 -->
+       <action name="deleteAddressCart" class="action.ShopingAction" method="deleteAddress">
+        <result type="chain">getOrderConfirmCart</result>
+      </action>
+      
+      
+   
+   <!-- ******************************************************************************************************** -->
+   <!-- 发表评论 -->
+    <action name="comment" class="action.ShopingAction" method="comment">
+        <result type="chain">getOrderDetail</result>
+      </action>
+      
+    </package>
+</struts>    

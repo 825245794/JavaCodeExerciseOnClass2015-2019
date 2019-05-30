@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 
+
+  This mapping demonstrates content-based discrimination for the
+  table-per-hierarchy mapping strategy, using a formula
+  discriminator.
+
+-->
+
+<hibernate-mapping>
+	
+	<class name="com.test.entity.StudentEntity"  table="tutor_student" catalog="tutor">
+		
+		<id name="student_key" type="java.lang.Integer">
+		    <column name="student_key"></column>
+			<generator class="identity"/>
+		</id>
+
+
+	   <property name="student_account" type="java.lang.String">
+	         <column name="student_account"></column> 
+	   </property>
+	   
+	   	<property name="student_password" type="java.lang.String">
+	         <column name="student_password" length="50"></column> 
+	   </property>
+	   
+	   	<property name="student_introduce" type="java.lang.String">
+	         <column name="student_introduce" length="50"></column> 
+	   </property>
+	   
+	   	<property name="student_sex" type="java.lang.String">
+	         <column name="student_sex" length="50"></column> 
+	   </property>
+	   
+	   	<property name="student_age" type="java.lang.String">
+	         <column name="student_age" length="50"></column> 
+	   </property>
+	   
+	   	<property name="student_name" type="java.lang.String">
+	         <column name="student_name" length="50"></column> 
+	   </property>
+	   
+	   <property name="student_status" type="java.lang.Byte">
+	         <column name="student_status" length="50"></column> 
+	   </property>
+	   	  
+	</class>
+
+
+</hibernate-mapping>

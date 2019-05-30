@@ -1,0 +1,42 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<base href="<%=basePath%>">
+
+<title>My JSP 'content.jsp' starting page</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+	 <link href="admin/css/mycss.css" rel="stylesheet" type="text/css" />
+ <style type="text/css">
+ *{
+padding: 0;
+margin: 0;
+}
+	 
+	</style>
+  </head>
+   <body bgcolor="#FDF3EE">
+    <div align="center" id="conn">
+        <div id="d1">
+             
+
+        </div>
+    </div>  
+  </body>
+</html>
+

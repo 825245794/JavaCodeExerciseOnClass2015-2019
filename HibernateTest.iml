@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/antlr-2.7.6.jar" />
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/commons-collections-3.1.jar" />
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar" />
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/javassist-3.12.0.GA.jar" />
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/jta-1.1.jar" />
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/slf4j-api-1.6.1.jar" />
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" />
+    <conelement value="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0" />
+    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
+    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
+    <conelement value="com.genuitec.runtime.library/com.genuitec.jstl_1.2.2" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/HibernateTest/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/HibernateTest/WebRoot/WEB-INF/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/HibernateTest">
+      <sourceFolder url="file://$MODULE_DIR$/HibernateTest/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="Java SE 8 [1.8.0_73]" jdkType="JavaSDK" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0" level="application" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
+    <orderEntry type="library" exported="" name="com.genuitec.runtime.library/com.genuitec.jstl_1.2.2" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library name="antlr-2.7.6.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/antlr-2.7.6.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-collections-3.1.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/commons-collections-3.1.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="dom4j-1.6.1.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="javassist-3.12.0.GA.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/javassist-3.12.0.GA.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jta-1.1.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/jta-1.1.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="slf4j-api-1.6.1.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/slf4j-api-1.6.1.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="mysql-connector-java-5.1.7-bin.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/HibernateTest/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<!--  -->
+	<package name="user" namespace="/user" extends="struts-default">
+	<!-- 国际化 -->
+	   <action name="i18n" class="action.UserAction" method="i18n">
+          <result type="chain">main</result>
+      </action>
+      
+		<!-- 实现用户注册 -->
+		<action name="regist" class="action.UserAction" method="regist">
+			<result>/user/login.jsp</result>
+			<result name="input">/user/regist.jsp</result>
+		</action>
+
+		<!-- 实现用户登录 -->
+
+		<action name="login" class="action.UserAction" method="login">
+			<result>/user/main.jsp</result>
+			<result name="error">/user/login.jsp</result>
+		</action>
+
+	  <!-- 实现退出登录 -->
+
+		<action name="exit" class="action.UserAction" method="exit">
+			<result>/user/main.jsp</result>
+		</action>
+		
+		  <!-- 实现游客访问 -->
+
+	 	<action name="main" class="action.UserAction" method="main">
+			<result>/user/main.jsp</result>
+		</action> 
+		
+		 <!-- 显示各类商品 -->
+
+	 	<action name="showGoods" class="action.UserAction" method="showGoods">
+			<result>/user/showGoods.jsp</result>
+		</action>
+		
+	</package>
+</struts>    

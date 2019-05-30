@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/activation-1.1.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-cli-1.2.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-codec-1.4.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-codec-1.9.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-httpclient-3.0.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-logging-1.1.1.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-logging-1.2.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/fluent-hc-4.5.2.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpclient-4.5.2.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpclient-cache-4.5.2.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpclient-win-4.5.2.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpcore-4.4.4.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpcore-4.4.5.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpcore-ab-4.4.5.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpcore-nio-4.4.5.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpmime-4.5.2.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpunit.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/javacsv.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jna-4.1.0.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jna-platform-4.1.0.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/js-1.6R5.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/json_org.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/json-2.1.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jsoup-1.8.1.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jtidy-4aug2000r7-dev.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/junit-3.8.1.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jxl.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/mail-1.4.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/nekohtml-0.9.5.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/servlet-api-2.4.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/xercesImpl-2.6.1.jar!/" />
+    <libelement value="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/xmlParserAPIs-2.6.1.jar!/" />
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/LJL/src/SQL/lib/mysql-connector-java-5.1.39-bin.jar" />
+    <libelement value="file:///Volumes/LJL/ojdbc7.jar" />
+    <libelement value="jar://$MODULE_DIR$/LJL/src/hibernate-lib/antlr-2.7.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/LJL/src/hibernate-lib/commons-collections-3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/LJL/src/hibernate-lib/dom4j-1.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/LJL/src/hibernate-lib/javassist-3.12.0.GA.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/LJL/src/hibernate-lib/jta-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/LJL/src/hibernate-lib/slf4j-api-1.6.1.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/LJL/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/LJL/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/LJL">
+      <sourceFolder url="file://$MODULE_DIR$/LJL/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="activation-1.1.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/activation-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-cli-1.2.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-cli-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-codec-1.4.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-codec-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-codec-1.9.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-codec-1.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-httpclient-3.0.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-httpclient-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.1.1.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-logging-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.2.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/commons-logging-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fluent-hc-4.5.2.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/fluent-hc-4.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient-4.5.2.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpclient-4.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient-cache-4.5.2.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpclient-cache-4.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient-win-4.5.2.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpclient-win-4.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-4.4.4.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpcore-4.4.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-4.4.5.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpcore-4.4.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-ab-4.4.5.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpcore-ab-4.4.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-nio-4.4.5.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpcore-nio-4.4.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpmime-4.5.2.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpmime-4.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpunit.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/httpunit.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javacsv.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/javacsv.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jna-4.1.0.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jna-4.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jna-platform-4.1.0.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jna-platform-4.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="js-1.6R5.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/js-1.6R5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="json_org.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/json_org.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="json-2.1.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/json-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsoup-1.8.1.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jsoup-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jtidy-4aug2000r7-dev.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jtidy-4aug2000r7-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junit-3.8.1.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/junit-3.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jxl.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/jxl.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mail-1.4.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/mail-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="nekohtml-0.9.5.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/nekohtml-0.9.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="servlet-api-2.4.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/servlet-api-2.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xercesImpl-2.6.1.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/xercesImpl-2.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmlParserAPIs-2.6.1.jar">
+        <CLASSES>
+          <root url="jar:///Volumes/LJL/JavaEX/LJL/src/bangumi/lib/xmlParserAPIs-2.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="mysql-connector-java-5.1.39-bin.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/LJL/src/SQL/lib/mysql-connector-java-5.1.39-bin.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ojdbc7.jar">
+        <CLASSES>
+          <root url="file:///Volumes/LJL/ojdbc7.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="antlr-2.7.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/LJL/src/hibernate-lib/antlr-2.7.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-collections-3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/LJL/src/hibernate-lib/commons-collections-3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="dom4j-1.6.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/LJL/src/hibernate-lib/dom4j-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="javassist-3.12.0.GA.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/LJL/src/hibernate-lib/javassist-3.12.0.GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jta-1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/LJL/src/hibernate-lib/jta-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="slf4j-api-1.6.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/LJL/src/hibernate-lib/slf4j-api-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

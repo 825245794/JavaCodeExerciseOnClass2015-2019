@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- ${pageContext.request.contextPath} -->	
+<struts>
+  <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+  <constant name="struts.i18n.encoding" value="UTF-8" />
+  <package name="" namespace="/" extends="struts-default" >	
+    <action name="login" class="com.mall.action.LoginAction"> 
+	  <result name="success">index</result>
+	  <result name="input">error</result>
+    </action>
+    
+     <action name="register" class="com.mall.action.RegisterAction"> 
+	  <result name="success">index</result>
+	  <result name="input">error</result>
+    </action>
+    
+     <action name="cart" class="com.mall.action.ShopcartAction"> 
+	  <result name="success">shopcart</result>
+	  <result name="index">index</result>
+	  <result name="input">error</result>
+	  <result name="cart" type="chain">cart</result>
+    </action>
+       
+     <action name="productdetails" class="com.mall.action.ProductDetailsAction"> 
+	  <result name="success">product-details.jsp</result>
+    </action> 
+    <action name="*.action">
+      <result>{1}.action</result>
+    </action> 
+    
+    <action name="*">
+	  <result>/{1}.jsp</result>
+    </action> 
+  </package>
+  <include file="admin.xml"></include> 
+</struts>
+  

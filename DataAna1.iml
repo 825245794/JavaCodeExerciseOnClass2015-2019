@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/DataAna/WebContent/WEB-INF/lib/mysql-connector-java-5.1.12-bin.jar" />
+    <libelement value="file:///Users/LJL/Documents/JavaEX Myeclipse/DataAna/WebContent/WEB-INF/lib/c3p0-0.9.1.2.jar" />
+    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
+    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
+    <conelement value="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0" />
+    <conelement value="com.genuitec.runtime.library/com.genuitec.hibernate_3.0" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/DataAna/src" expected_position="1" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/DataAna/build/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/DataAna">
+      <sourceFolder url="file://$MODULE_DIR$/DataAna/src" isTestSource="false" />
+    </content>
+    <orderEntry type="module-library" exported="">
+      <library name="mysql-connector-java-5.1.12-bin.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/DataAna/WebContent/WEB-INF/lib/mysql-connector-java-5.1.12-bin.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library name="c3p0-0.9.1.2.jar">
+        <CLASSES>
+          <root url="file:///Users/LJL/Documents/JavaEX Myeclipse/DataAna/WebContent/WEB-INF/lib/c3p0-0.9.1.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="com.genuitec.runtime.library/com.genuitec.hibernate_3.0" level="application" />
+    <orderEntry type="jdk" jdkName="Java JDK VM 1.8.0_v112 OSX" jdkType="JavaSDK" />
+  </component>
+</module>

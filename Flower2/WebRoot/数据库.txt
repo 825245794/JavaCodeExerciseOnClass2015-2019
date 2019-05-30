@@ -1,0 +1,110 @@
+ 导出数据：
+ exp  system/System88@orcl tables= flower_usertable,flower_goodstable,flower_addresstable,flower_ordertable,flower_orderdetail,flower_carttable,flower_typetable,flower_admintable,flower_noticetbale,flower_focustable file=d:\mydt.dmp
+ 
+ 导入数据：
+ imp system/System88@orcl file=d:\mydt.dmp full=y
+  
+ 删除表
+  drop table flower_typetable;
+  drop table flower_admintable;
+  drop table flower_noticetbale;
+  drop table flower_focustable;
+  drop table flower_carttable;
+  drop table flower_orderdetail;
+  drop table flower_ordertable;
+  drop table  flower_goodstable;
+  drop table flower_addresstable;
+  drop table flower_usertable;
+ 
+ 
+
+创建表 
+ create table flower_typetable(
+   typeid  varchar(20) primary key,
+   typename varchar(20) not null
+);
+
+ create table flower_usertable(
+userid varchar(20) primary key,
+upass varchar(20) not null,
+sex char(2),
+age number,
+nikename varchar(20),
+upic varchar(50)
+);
+
+
+ 
+create table  flower_admintable(
+ adminid varchar(20) primary key,
+ apass varchar(20) not null
+);
+
+insert into flower_admintable values('admin','admin');
+
+create table flower_goodstable(
+  gid varchar(20) primary key,
+  gname varchar(20) not null,
+  goprice number,
+  gnprice number,
+  gpic varchar(50),
+  gstore number,
+  gsales number,
+  typename varchar(20),
+  guser varchar(20),
+  recomment varchar(6) , 
+  gdetaile varchar(200)
+);
+
+
+
+
+create table flower_noticetbale(
+  nid varchar(20) primary key,
+  ntitle varchar(50) not null,
+  ndetail varchar(200),
+  ntime varchar(20)
+);
+create table flower_focustable(
+  fid varchar(20) primary key,
+  gid references flower_goodstable(gid),
+  userid  references flower_usertable(userid),
+  grade varchar(20),
+  fdetail varchar(200)
+);
+
+
+
+
+create table flower_addresstable(
+   addressid varchar(20) primary key,
+   userid  references flower_usertable(userid),
+   tel varchar(20),
+   realname varchar(20),
+   address varchar(100),
+   post varchar(20),
+   def int
+);
+
+
+
+create table flower_carttable(
+  cartid varchar(20) primary key,
+  userid  references flower_usertable(userid),
+  gid references flower_goodstable(gid),
+  gnum number 
+);
+create table flower_ordertable(
+   orderid varchar(20) primary key,
+   userid  references flower_usertable(userid),
+   amount number,
+   status varchar(20),
+   otime varchar(20),
+   addressid varchar(100)
+);
+create table flower_orderdetail(
+   orderid  references flower_ordertable(orderid),
+   gid references flower_goodstable(gid),
+   gnum number,
+    primary key(orderid,gid)
+  );
